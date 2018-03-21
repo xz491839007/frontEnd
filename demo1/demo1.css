@@ -1,19 +1,19 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
-
+} */
 html, body{
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 .class_div_first{
     background-color: red;
     /*border-color: green;*/
-    width: 100%;
     height: 64px;
     float: left;
+    width: 100%;
     /*margin: 20px;*/
 }
 
@@ -21,33 +21,40 @@ html, body{
     background-color: aqua;
     width: 20px;
     height: 100%;
-    display: inline;
-    float: left;
     margin-left: 10px;
-
+    display: inline-block;
 }
 
 
 .class_div_out{
     background-color: orange;
     /*width: 600px;*/
-    height: 100%;
-    position: absolute;
-    top: 64px;
-    width: 100%;
-
+    /* height: 80%; */
+    /* top: 64px; */
+    margin-bottom: -50px;
+    min-height: 100%
 }
+
+.class_div_left{
+  background-color: black;
+  width: 20%;
+  height: 100%;
+}
+
 
 .class_div_secord{
     background-color: black;
-    width: 100px;
+    width: 10%;
     height: 100px;
 }
 
-.class_main{
-    /*width: auto;*/
-    /*height: auto;*/
-    /*position: relative;*/
-    /*height: 500px;*/
-    /*width: 300px;*/
+.class_div_footview{
+    background-color: blue;
+    height: 50px;
+    /* height: 20%; */
+}
+
+/* 并联的缩写方式 */
+.class_div_out .class_div_footview {
+  width: 100%;
 }
